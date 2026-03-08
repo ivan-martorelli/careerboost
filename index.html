@@ -536,8 +536,7 @@
         <li>CleverLetter generation</li>
         <li>EliteConnect outreach</li>
       </ul>
-      <!-- Replace href="#" with your Paddle checkout link once approved -->
-      <a href="#" class="plan-btn plan-btn-outline">Get Started</a>
+      <a href="javascript:void(0)" onclick="openCheckout('pri_01jxd8jh1tx3mp0wv5tyz4xhpa')" class="plan-btn plan-btn-outline">Get Started</a>
     </div>
 
     <div class="plan-card plan-featured">
@@ -556,7 +555,7 @@
         <li>CleverLetter generation</li>
         <li>EliteConnect outreach</li>
       </ul>
-      <a href="#" class="plan-btn plan-btn-solid">Get Started</a>
+      <a href="javascript:void(0)" onclick="openCheckout('pri_01jxd86mg11yw8epvnwg19cycg')" class="plan-btn plan-btn-solid">Get Started</a>
     </div>
 
     <div class="plan-card">
@@ -574,7 +573,7 @@
         <li>CleverLetter generation</li>
         <li>EliteConnect outreach</li>
       </ul>
-      <a href="#" class="plan-btn plan-btn-outline">Get Started</a>
+      <a href="javascript:void(0)" onclick="openCheckout('pri_01jx5jcxqamfnvgxz6eb6pewdd')" class="plan-btn plan-btn-outline">Get Started</a>
     </div>
 
   </div>
@@ -649,10 +648,19 @@
   </div>
 
   <div class="footer-bottom">
-    <div class="footer-copy">© 2025 IntelliMart. All rights reserved. CareerBoost Suite is a fully AI-automated SaaS product. No human services are offered or sold through this platform.</div>
+    <div class="footer-copy">© 2026 IntelliMart. All rights reserved. CareerBoost Suite is a fully AI-automated SaaS product. No human services are offered or sold through this platform.</div>
     <div class="paddle-seal">💳 Payments secured by <strong>Paddle</strong></div>
   </div>
 </footer>
+
+<!-- Paddle.js v2 -->
+<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+<script>
+  Paddle.Initialize({ token: 'live_0f112cbe29c8989e285e82399cb' });
+  function openCheckout(priceId) {
+    Paddle.Checkout.open({ items: [{ priceId: priceId, quantity: 1 }] });
+  }
+</script>
 
 </body>
 </html>
